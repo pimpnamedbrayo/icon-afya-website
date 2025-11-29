@@ -1,0 +1,343 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #0f172a;
+  background: #f4f5f7;
+}
+
+/* Layout helpers */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #ffffffee;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+/* Logo block */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-image {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.logo-text {
+  line-height: 1.2;
+}
+
+.logo-name {
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.logo-sub {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.nav-links a {
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #1e293b;
+}
+
+.nav-links a:hover {
+  color: #0ea5e9;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #0f6abf, #ef4444); /* blue + red like your banner */
+  color: #f9fafb;
+  padding: 4rem 0 3rem;
+}
+
+.hero-content {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.2fr);
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 2.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.motto {
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.hero-text p {
+  max-width: 34rem;
+}
+
+.hero-buttons {
+  margin: 1.3rem 0 0.75rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.hero-hours {
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+.hero-card {
+  background: #f9fafb;
+  color: #0f172a;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.18);
+}
+
+.hero-card h2 {
+  margin-top: 0;
+}
+
+.hero-phone {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0.4rem 0;
+}
+
+/* Big banner section */
+.banner-section {
+  padding: 2rem 0;
+  background: #ffffff;
+}
+
+.clinic-banner {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 0.9rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.2);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.3rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: #0f172a;
+  color: #f9fafb;
+}
+
+.btn.secondary {
+  background: #f9fafb;
+  color: #0f172a;
+}
+
+.btn.primary:hover {
+  background: #020617;
+}
+
+.btn.secondary:hover {
+  background: #e5e7eb;
+}
+
+.btn.full-width {
+  width: 100%;
+  text-align: center;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 0;
+}
+
+.section-alt {
+  background: #e5f3ff;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+/* Cards / Grid */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 0.8rem;
+  padding: 1.4rem;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* Pharmacy extra text */
+.pharmacy-info {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Facility / team photos */
+.photo-row {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.facility-photo {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 0.9rem;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.25);
+}
+
+.team-photo {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  display: block;
+  border-radius: 0.9rem;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.25);
+}
+
+/* Contact */
+.contact-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.4fr);
+  align-items: flex-start;
+}
+
+.contact-form {
+  background: #ffffff;
+  border-radius: 0.8rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+}
+
+.contact-form label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.5rem;
+  border: 1px solid #cbd5e1;
+  margin-top: 0.25rem;
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 1px #0ea5e9;
+}
+
+.form-note {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin-top: 0.4rem;
+}
+
+/* Footer */
+.footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content,
+  .contact-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .nav-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    margin: 0 0.75rem 0.35rem 0;
+  }
+
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .map-container {
+  margin-top: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+}
